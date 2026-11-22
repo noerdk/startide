@@ -1,0 +1,25 @@
+name: Idea
+description: Something that would make Startide better to play or to sit with.
+labels: ["idea"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Startide aims to stay calm and simple: the best ideas make it more beautiful or more musical, rather than adding buttons.
+  - type: textarea
+    id: idea
+    attributes:
+      label: The idea
+      description: What would you like Startide to do?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why
+      description: When would you use it? What does it let you play or hear that you can't now?
+  - type: textarea
+    id: how
+    attributes:
+      label: How it might work on the device
+      description: Which page, knob or button? A sketch or mock-up is welcome.

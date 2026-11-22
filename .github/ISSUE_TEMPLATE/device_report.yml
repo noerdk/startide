@@ -1,0 +1,43 @@
+name: Device report
+description: Tell us how Startide runs on your device or firmware, good or bad.
+labels: ["device report"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Reports from MinUI, the original Miyoo Mini and other firmwares help decide what Startide supports next.
+  - type: input
+    id: device
+    attributes:
+      label: Device and firmware
+      placeholder: "Miyoo Mini (original), MinUI 2024.05"
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Startide version
+      placeholder: "0.2.0"
+    validations:
+      required: true
+  - type: checkboxes
+    id: works
+    attributes:
+      label: What works
+      options:
+        - label: It starts and shows the title
+        - label: Sound plays without crackling
+        - label: All buttons do what docs/controls.md says
+        - label: The picture is the right way up
+        - label: Saving and quitting (hold MENU) works, and it resumes next time
+        - label: The update check finds new releases (with Wi-Fi on)
+  - type: textarea
+    id: log
+    attributes:
+      label: log.txt
+      description: The `status:` lines show how hard the device is working.
+      render: text
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes

@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Install guide
+    url: https://github.com/noerdk/startide/blob/main/docs/install.md
+    about: Step by step for Onion OS and MinUI.
+  - name: FAQ and troubleshooting
+    url: https://github.com/noerdk/startide/blob/main/docs/faq.md
+    about: No sound, crackles, own samples, Wi-Fi MIDI, where things are kept.
+  - name: Security problem
+    url: https://github.com/noerdk/startide/security/advisories/new
+    about: Please report security issues privately.

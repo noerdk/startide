@@ -1,0 +1,63 @@
+name: Bug report
+description: Something doesn't work, sounds wrong or looks wrong.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time. The `log.txt` from `App/Startide/` on your SD card is the most useful thing you can add: it says what Startide found and what went wrong.
+  - type: input
+    id: version
+    attributes:
+      label: Startide version
+      description: The release you installed (shown on the update screen, or in the zip's name).
+      placeholder: "0.2.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: device
+    attributes:
+      label: Device
+      options:
+        - Miyoo Mini Plus
+        - Miyoo Mini (original)
+        - Other (say which below)
+    validations:
+      required: true
+  - type: dropdown
+    id: firmware
+    attributes:
+      label: Firmware
+      options:
+        - Onion OS
+        - MinUI
+        - Other (say which below)
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect, and what happened instead?
+      placeholder: "I pressed START, chose NEW PIECE, and the screen froze on the Cloud Cathedral page…"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: How to make it happen again
+      placeholder: |
+        1. Start Startide
+        2. Go to …
+        3. …
+  - type: textarea
+    id: log
+    attributes:
+      label: log.txt
+      description: Paste the contents of `App/Startide/log.txt`, or drag the file here.
+      render: text
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else
+      description: Screenshots, a recording, your firmware version, what you'd changed in launch.sh…
