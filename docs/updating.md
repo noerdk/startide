@@ -30,8 +30,8 @@ again after connecting.
 ## If it never offers an update
 
 - **Check the date and time** (Onion: *Settings → Time*, or *Tweaks → System → Clock*). Secure
-  connections need the clock to be roughly right; `log.txt` says so if this is the problem.
-- `log.txt` in `App/Startide/` has an `update:` line on every start that says what it found.
+  connections need the clock to be roughly right; the log says so if this is the problem.
+- `App/Startide/logs/current.txt` has an `update:` line on every start that says what it found.
 
 ## Updating by hand
 

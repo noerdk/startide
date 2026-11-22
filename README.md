@@ -171,7 +171,8 @@ More answers in **[docs/faq.md](docs/faq.md)**.
 ## Feedback
 
 Found a bug, or have an idea? [Open an issue](https://github.com/noerdk/startide/issues/new/choose).
-For a bug, the `log.txt` from `App/Startide/` is the most useful thing you can attach.
+For a bug, attach the two files in `App/Startide/logs/`: they say which version and firmware
+you have, what happened just before, and, if Startide crashed, where.
 
 ## Credits
 

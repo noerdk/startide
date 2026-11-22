@@ -54,6 +54,6 @@ recordings in `App/Startide/samples/`, so copy those first if you want to keep t
 
 ## If it doesn't start
 
-Startide writes a `log.txt` next to itself every time it runs. It says which screen and sound
-setup it found and any errors. See the [FAQ](faq.md#it-doesnt-start), and attach `log.txt` to
-an [issue](https://github.com/noerdk/startide/issues/new/choose) if you're stuck.
+Startide keeps a log of each run in `App/Startide/logs/` (see the
+[FAQ](faq.md#the-logs)). If you're stuck, attach both files to an
+[issue](https://github.com/noerdk/startide/issues/new/choose).

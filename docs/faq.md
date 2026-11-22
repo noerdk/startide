@@ -8,6 +8,7 @@
 - [Performance](#performance)
 - [Using your own sounds](#using-your-own-sounds)
 - [Wi-Fi MIDI](#wi-fi-midi)
+- [The logs](#the-logs)
 - [Where things are kept](#where-things-are-kept)
 - [Reporting a bug](#reporting-a-bug)
 
@@ -20,8 +21,8 @@ evening on its own.
 
 ## It doesn't start
 
-Look at `App/Startide/log.txt` on the card. Its first lines show the screen, the input
-devices and the sound setup Startide found.
+Look at `App/Startide/logs/current.txt` on the card (see [the logs](#the-logs)). It shows
+the screen, the input devices and the sound setup Startide found.
 
 - **The log is empty or missing:** Onion didn't run it. Check that the folder is
   `App/Startide` (not `App/Startide/Startide`) and that `launch.sh` is there.
@@ -32,12 +33,15 @@ devices and the sound setup Startide found.
 - Check the Miyoo's volume (Onion's own volume setting applies to Startide too).
 - On Onion, Startide plays through Onion's audio server; if another app left it in a bad
   state, a restart of the Miyoo fixes it.
-- The `audio:` line in `log.txt` shows what it found.
+- The `audio:` line in `logs/current.txt` shows what it found.
+- If the sound stops in the middle of playing, Startide says so on screen; the log has a
+  CRASH block saying why. Starting it again brings the sound back.
 
 ## Performance
 
 Startide runs the CPU at full speed while it plays (it asks Onion's `cpuclock` for 1200 MHz).
-`log.txt` has a status line every 10 seconds: *audio X% of its time budget* should stay
+The log has a status line every 10 seconds for the first minute, then every minute:
+*audio X% of its time budget* should stay
 well under 100% (it's around 35–45% on a Mini Plus).
 
 If the sound crackles, open `launch.sh`:
@@ -69,6 +73,25 @@ shows up in *Audio MIDI Setup → MIDI Studio → Network* as "Startide"; on Win
 Notes play at their own pitch; **AUTOPLAY** decides whether the piece keeps playing itself
 while you do, and **FIT TO KEY** moves every note into the current key.
 
+## The logs
+
+Startide keeps a log of each run in `App/Startide/logs/`:
+
+| File | What's in it |
+|---|---|
+| `current.txt` | the last (or current) time Startide ran |
+| `previous.txt` | the time before that |
+
+Each log starts with the Startide version, firmware, device and settings, and says how the
+run before it ended: **ended normally**, **CRASHED**, or **stopped without quitting** (the
+battery ran out, the power button, or a crash). Then comes a timeline of what was done (menu
+choices, page changes, sound sources, updates) and, if Startide crashed, a **CRASH** block
+saying where.
+
+If something goes wrong and you start Startide again to check, the evidence moves to
+`previous.txt`, so attach **both** files to a bug report. They never grow large: a long run
+is trimmed to its beginning and its last minutes, so together they stay under half a megabyte.
+
 ## Where things are kept
 
 | What | Where on the card |
@@ -77,10 +100,9 @@ while you do, and **FIT TO KEY** moves every note into the current key.
 | Save slots 1–4 | `App/Startide/saves/` |
 | Recordings | `App/Startide/samples/REC 001.wav` … |
 | The AUTO DJ's kept moments | `App/Startide/samples/DJ 001.wav` … `DJ 008.wav` |
-| The log of the last run | `App/Startide/log.txt` |
+| The logs of the last two runs | `App/Startide/logs/` |
 
 ## Reporting a bug
 
-[Open an issue](https://github.com/noerdk/startide/issues/new/choose) and attach `log.txt`. Say
-which device and firmware you use, and which version of Startide (it's in the release you
-downloaded, and on the update screen).
+[Open an issue](https://github.com/noerdk/startide/issues/new/choose) and attach the two files
+from `App/Startide/logs/`. They already say which version, firmware and device you have.

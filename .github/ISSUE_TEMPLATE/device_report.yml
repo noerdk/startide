@@ -34,9 +34,8 @@ body:
   - type: textarea
     id: log
     attributes:
-      label: log.txt
-      description: The `status:` lines show how hard the device is working.
-      render: text
+      label: Logs
+      description: Drag `App/Startide/logs/current.txt` here. Its first lines say which firmware and device it ran on; the `status:` lines show how hard the device is working.
   - type: textarea
     id: notes
     attributes:

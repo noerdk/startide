@@ -5,7 +5,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time. The `log.txt` from `App/Startide/` on your SD card is the most useful thing you can add: it says what Startide found and what went wrong.
+        Thanks for taking the time. The logs are the most useful thing you can add: on your SD card, `App/Startide/logs/` has `current.txt` (the last time Startide ran) and `previous.txt` (the time before). They say which version and firmware you have, what you were doing, and what went wrong.
   - type: input
     id: version
     attributes:
@@ -53,9 +53,8 @@ body:
   - type: textarea
     id: log
     attributes:
-      label: log.txt
-      description: Paste the contents of `App/Startide/log.txt`, or drag the file here.
-      render: text
+      label: Logs
+      description: Drag `current.txt` and `previous.txt` from `App/Startide/logs/` here. (If something went wrong and you started Startide again since, the problem is in `previous.txt`.)
   - type: textarea
     id: extra
     attributes:
