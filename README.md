@@ -178,8 +178,13 @@ you have, what happened just before, and, if Startide crashed, where.
 
 Startide is made by **Noer** · © 2026 Noer Advisory. All rights reserved. See [LICENSE.md](LICENSE.md).
 
-The paintings and logo were generated with Stable Diffusion XL and the pixel-art-xl LoRA
-and FLUX.1 [schnell], then reworked by hand into each scene's palette. Thanks to the
+**AI disclosure:** Startide is AI-assisted. Noer designed it, directed it and tested it on a
+Miyoo Mini Plus, and much of the code was written with Claude (Anthropic's AI) as a coding
+assistant. The paintings and logo were generated with Stable Diffusion XL and the
+pixel-art-xl LoRA and FLUX.1 [schnell], then reworked by hand into each scene's palette.
+The sounds are all made by the instrument itself; there's no AI audio.
+
+Thanks to the
 [Onion](https://github.com/OnionUI/Onion) and [MinUI](https://github.com/shauninman/MinUI)
 teams for making the Miyoo Mini such a good place to build for.
 
