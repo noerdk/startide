@@ -6,7 +6,7 @@ All notable changes to Startide are listed here. The format follows
 
 ## [0.2.0] - 2026-11-22
 
-The first public release for the Miyoo Mini Plus.
+The first public release, for the Miyoo Mini and Mini Plus.
 
 ### Added
 - **Automatic updates over Wi-Fi.** Startide looks for a newer release a few seconds after it

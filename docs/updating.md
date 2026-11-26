@@ -22,6 +22,10 @@ Startide updates itself over Wi-Fi from this repository's
 
 Your session, saves, recordings and samples are never touched by an update.
 
+> **Original Miyoo Mini:** it has no Wi-Fi, so it never finds an update by itself. Download
+> the new `Startide-Onion.zip` and unzip it over the old copy on the SD card; your session,
+> saves and samples stay as they are.
+
 ## Turning Wi-Fi on
 
 On Onion: **Settings → Network → Wi-Fi**. Startide checks once per start, so start it

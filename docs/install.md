@@ -4,7 +4,7 @@
 
 ## What you need
 
-- A **Miyoo Mini Plus** running **[Onion OS](https://onionui.github.io/)** (4.x).
+- A **Miyoo Mini** or **Mini Plus** running **[Onion OS](https://onionui.github.io/)** (4.x).
 - Its SD card and a card reader for your computer.
 - About **60 MB** free on the card (the app is ~3 MB; the rest is its sample library).
 

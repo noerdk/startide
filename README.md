@@ -4,13 +4,13 @@
 
 # Startide
 
-**A pocket ambient instrument for the Miyoo Mini Plus.**
+**A pocket ambient instrument for the Miyoo Mini and Mini Plus.**
 Granular clouds, a cathedral reverb and warm tape, painted as a slow evening in pixel art.
 It plays itself, never repeats, and lets you play along.
 
 [![Latest release](https://img.shields.io/github/v/release/noerdk/startide?style=for-the-badge&color=f5a142&labelColor=2a1840&label=release)](https://github.com/noerdk/startide/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/noerdk/startide/total?cacheSeconds=3600&style=for-the-badge&color=b25cff&labelColor=2a1840)](https://github.com/noerdk/startide/releases)
-[![Miyoo Mini Plus](https://img.shields.io/badge/Miyoo_Mini_Plus-Onion_OS-5ad1e6?style=for-the-badge&labelColor=2a1840)](docs/install.md)
+[![Miyoo Mini and Mini Plus](https://img.shields.io/badge/Miyoo_Mini_%2F_Mini_Plus-Onion_OS-5ad1e6?style=for-the-badge&labelColor=2a1840)](docs/install.md)
 [![Updates](https://img.shields.io/badge/updates-over_Wi--Fi-7be08a?style=for-the-badge&labelColor=2a1840)](docs/updating.md)
 
 [**Download**](https://github.com/noerdk/startide/releases/latest) ·
@@ -80,7 +80,8 @@ where you left off next time.
 
 ### 📡 Wi-Fi MIDI and automatic updates
 Play it from a Mac, iPad or DAW over network MIDI. New versions arrive over Wi-Fi:
-Startide tells you when one is out and installs it when you say so.
+Startide tells you when one is out and installs it when you say so. (Wi-Fi needs the
+Mini Plus: the original Mini has none.)
 
 </td>
 </tr>
@@ -99,7 +100,7 @@ Startide tells you when one is out and installs it when you say so.
 
 ## Install
 
-> **You need:** a Miyoo Mini Plus with [Onion OS](https://onionui.github.io/), and an SD card reader.
+> **You need:** a Miyoo Mini or Mini Plus with [Onion OS](https://onionui.github.io/), and an SD card reader.
 > A [MinUI](https://github.com/shauninman/MinUI) package is included too; it hasn't been tried on a device yet, so reports are welcome.
 
 1. **Download** `Startide-Onion.zip` (or `Startide-MinUI.zip`) from the [latest release](https://github.com/noerdk/startide/releases/latest).
@@ -138,8 +139,8 @@ More in **[docs/updating.md](docs/updating.md)**.
 <details>
 <summary><b>Does it work on the original Miyoo Mini (not Plus)?</b></summary>
 
-It's built for the Mini Plus, which it's tested on. The original Mini has the same chip and
-should run it; if you try it, an issue with your results is very welcome.
+Yes, it's been tested on both. The original Mini has no Wi-Fi, so it doesn't get the
+automatic updates or Wi-Fi MIDI: to update it, unzip the new release over the old copy.
 </details>
 
 <details>
