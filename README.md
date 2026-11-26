@@ -9,7 +9,7 @@ Granular clouds, a cathedral reverb and warm tape, painted as a slow evening in 
 It plays itself, never repeats, and lets you play along.
 
 [![Latest release](https://img.shields.io/github/v/release/noerdk/startide?style=for-the-badge&color=f5a142&labelColor=2a1840&label=release)](https://github.com/noerdk/startide/releases/latest)
-[![Downloads](https://img.shields.io/github/downloads/noerdk/startide/total?style=for-the-badge&color=b25cff&labelColor=2a1840)](https://github.com/noerdk/startide/releases)
+[![Downloads](https://img.shields.io/github/downloads/noerdk/startide/total?cacheSeconds=3600&style=for-the-badge&color=b25cff&labelColor=2a1840)](https://github.com/noerdk/startide/releases)
 [![Miyoo Mini Plus](https://img.shields.io/badge/Miyoo_Mini_Plus-Onion_OS-5ad1e6?style=for-the-badge&labelColor=2a1840)](docs/install.md)
 [![Updates](https://img.shields.io/badge/updates-over_Wi--Fi-7be08a?style=for-the-badge&labelColor=2a1840)](docs/updating.md)
 
