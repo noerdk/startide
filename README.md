@@ -12,6 +12,7 @@ It plays itself, never repeats, and lets you play along.
 [![Downloads](https://img.shields.io/github/downloads/noerdk/startide/total?cacheSeconds=3600&style=for-the-badge&color=b25cff&labelColor=2a1840)](https://github.com/noerdk/startide/releases)
 [![Miyoo Mini and Mini Plus](https://img.shields.io/badge/Miyoo_Mini_%2F_Mini_Plus-Onion_OS-5ad1e6?style=for-the-badge&labelColor=2a1840)](docs/install.md)
 [![Updates](https://img.shields.io/badge/updates-over_Wi--Fi-7be08a?style=for-the-badge&labelColor=2a1840)](docs/updating.md)
+[![Watch on YouTube](https://img.shields.io/badge/watch-on_YouTube-ff5a7a?style=for-the-badge&logo=youtube&logoColor=white&labelColor=2a1840)](https://youtu.be/IoOSsrhl9rQ)
 
 [**Download**](https://github.com/noerdk/startide/releases/latest) ·
 [Install](docs/install.md) ·
@@ -37,6 +38,16 @@ is meant to be calm: slow dissolves, soft breathing light, nothing that shakes o
 
 <div align="center">
 <img src="assets/pages.png" alt="The three pages: Grain Storm at dusk, Cloud Cathedral at blue hour, Starloom at night" width="100%">
+</div>
+
+## See it play
+
+<div align="center">
+
+<a href="https://youtu.be/IoOSsrhl9rQ"><img src="assets/video.jpg" alt="Watch on YouTube: 32 minutes of Startide playing itself on a Miyoo Mini Plus" width="640"></a>
+
+[**32 minutes of Startide playing itself**](https://youtu.be/IoOSsrhl9rQ) · [the Short](https://youtube.com/shorts/Hz4l58kQVew)
+
 </div>
 
 ## Features
